@@ -1,0 +1,63 @@
+/* Reset gaya dasar */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Kontainer utama */
+.centered-container {
+    width: 30vw; /* Setengah lebar layar */
+    height: 80vh; /* Setengah tinggi layar */
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(134, 108, 108, 0.2);
+    overflow: hidden; /* Hilangkan jarak antar elemen */
+}
+
+/* Header */
+header {
+    background-color: #beced3;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Content */
+.content {
+    display: flex;
+    flex: 1; /* Take up the remaining space */
+    flex-direction: row; /* Place sidebar and main content side by side */
+}
+
+/* Sidebar */
+aside {
+    width: 80%; /* Lebar sidebar */
+    background-color:   #c4d3d6;
+    padding-top: 10px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    color: rgb(112, 53, 107);
+}
+
+/* Main Content */
+main {
+    flex: 1; /* Isi ruang yang tersisa di sebelah sidebar */
+    background-color: #d7e4f0;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    padding-left: 23px;
+}
+
+a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from the parent element (h2) */
+}
